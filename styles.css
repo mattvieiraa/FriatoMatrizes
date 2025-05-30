@@ -6,7 +6,8 @@
     --cor-fundo2: #EDEDED; 
 }
 
-body{
+.conteudo-principal {
+  min-height: 100vh;
   font-family: var(--fonte-principal);
   color: var(--cor-preto);
   font-size: 18px;
@@ -16,10 +17,14 @@ body{
 
 .cabecalho {
   display: flex;
+  padding: 1em;
 }
 
 .cabecalho__link{
+  font-family: var(--fonte-principal);
   color: var(--cor-preto);
+  font-size: 18px;
+
   text-decoration: none;
   text-align: center;
   padding: 1em;
@@ -44,6 +49,10 @@ body{
   margin: 0.2em;
 }
 
+.botoes__linhagem button:hover {
+  background-color: var(--cor-fundo1);
+}
+
 .tabela__nome {
   padding: 1em;
 }
@@ -60,8 +69,8 @@ body{
   border-radius: 39px;
 }
 
-.tabela.hidden {
-  display: nome;
+.hidden {
+  display: none;
 }
 
 .tabela__cabecalho {
@@ -88,7 +97,7 @@ tbody > tr:nth-of-type(even) {
   background-color: var(--cor-fundo1);
 }
 
-.calculadora__titulo {
+.pagina__titulo {
   font-size: 38px;
   font-weight: 700;
   text-align: center;
@@ -107,6 +116,11 @@ tbody > tr:nth-of-type(even) {
   font-weight: 600;
 }
 
+.bloco__tabela {
+  display: flex;
+  flex-direction: column;
+}
+
 .calculadora__peso-batida {
   font-size: 20px;
   padding: 1em;
@@ -115,4 +129,25 @@ tbody > tr:nth-of-type(even) {
 
 .batidas {
   margin: auto;
+}
+
+.rodape{
+    background-color: var(--cor-fundo1);
+    font-family: var(--fonte-principal);
+    font-size: var(--fonte-tamanho);
+    text-decoration: none;
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 1em;
+}
+
+.rodape__texto {
+    color: var(--cor-preto);
+    text-decoration: none;
+    font-family: var(--fonte-principal);
+}
+
+.rodape__texto:hover {
+    font-weight: 800;
 }
