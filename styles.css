@@ -1,0 +1,114 @@
+:root{
+    --fonte-principal: "Poppins";
+    --fonte-tamanho: 16px;
+    --cor-preto: #000000;
+    --cor-fundo1: #C4C4C4;
+    --cor-fundo2: #EDEDED; 
+}
+
+body{
+  font-family: var(--fonte-principal);
+  color: var(--cor-preto);
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0 5em 0 5em;
+}
+
+.cabecalho {
+  display: flex;
+}
+
+.cabecalho__link{
+  color: var(--cor-preto);
+  text-decoration: none;
+  text-align: center;
+  padding: 1em;
+}
+
+.cabecalho__link:hover{
+    color: var(--cor-fundo1);
+}
+
+.botoes__linhagem {
+  display: flex;
+  justify-content: 2px;
+  font-size: 24px;
+  align-items: center;
+  padding: 1em;
+}
+
+.botoes__linhagem button {
+  font-family: var(--fonte-principal);
+  font-size: 24px;
+  border-radius: 39px;
+  margin: 0.2em;
+}
+
+.tabela__nome {
+  padding: 1em;
+}
+
+.tabela__nome strong {
+    font-weight: 700;
+}
+
+.tabela {
+  border-collapse: collapse;
+  font-size: 18px;
+  letter-spacing: 1px;
+  border-collapse: collapse;
+  border-radius: 39px;
+}
+
+.tabela__cabecalho {
+  background-color: var(--cor-fundo1);
+  font-weight: bold;
+}
+
+.tabela__coluna-a, .tabela__coluna-b {
+  border-radius: 39px;
+  padding: 0.5em;
+  text-align: center;
+  align-content: center;
+}
+
+.tabela__coluna-a {
+  font-weight: 600;
+}
+
+tbody > tr:nth-of-type(odd) {
+  background-color: var(--cor-fundo2);
+}
+
+tbody > tr:nth-of-type(even) {
+  background-color: var(--cor-fundo1);
+}
+
+.calculadora__titulo {
+  font-size: 38px;
+  font-weight: 700;
+  text-align: center;
+  padding: 1em;
+}
+
+.bloco__texto {
+  display: block;
+  align-items: center;
+  text-align: justify;
+}
+
+.calculadora__sub-titulo {
+  font-size: 20px;
+  padding: 1em;
+  font-weight: 600;
+}
+
+.calculadora__peso-batida {
+  font-size: 20px;
+  padding: 1em;
+  font-weight: 600;
+}
+
+.batidas {
+  margin: auto;
+}
