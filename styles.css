@@ -60,6 +60,10 @@ body{
   border-radius: 39px;
 }
 
+.tabela.hidden {
+  display: nome;
+}
+
 .tabela__cabecalho {
   background-color: var(--cor-fundo1);
   font-weight: bold;
