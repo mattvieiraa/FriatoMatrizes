@@ -12,22 +12,20 @@
   color: var(--cor-preto);
   font-size: 18px;
   font-weight: 400;
-  margin: 0 5em 0 5em;
+  margin: 0 1em 1em 1em;
 }
 
 .cabecalho {
   display: flex;
-  padding: 1em;
+  margin: 1em;
 }
 
 .cabecalho__link{
   font-family: var(--fonte-principal);
   color: var(--cor-preto);
   font-size: 18px;
-
   text-decoration: none;
   text-align: center;
-  padding: 1em;
 }
 
 .cabecalho__link:hover{
@@ -36,10 +34,11 @@
 
 .botoes__linhagem {
   display: flex;
-  justify-content: 2px;
+  justify-content: center;
   font-size: 24px;
   align-items: center;
   padding: 1em;
+  margin: 0;
 }
 
 .botoes__linhagem button {
@@ -98,7 +97,7 @@ tbody > tr:nth-of-type(even) {
 }
 
 .pagina__titulo {
-  font-size: 38px;
+  font-size: 28px;
   font-weight: 700;
   text-align: center;
   padding: 1em;
@@ -114,6 +113,7 @@ tbody > tr:nth-of-type(even) {
   font-size: 20px;
   padding: 1em;
   font-weight: 600;
+  text-align: center;
 }
 
 .bloco__tabela {
