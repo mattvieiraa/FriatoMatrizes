@@ -1,0 +1,43 @@
+.tabela__nome {
+  padding: 1em;
+}
+
+.tabela__nome strong {
+    font-weight: 700;
+}
+
+.tabela {
+  border-collapse: collapse;
+  font-size: 18px;
+  letter-spacing: 1px;
+  border-collapse: collapse;
+  border-radius: 39px;
+}
+
+.hidden {
+  display: none;
+}
+
+.tabela__cabecalho {
+  background-color: var(--cor-fundo1);
+  font-weight: bold;
+}
+
+.tabela__coluna-a, .tabela__coluna-b {
+  border-radius: 39px;
+  padding: 0.5em;
+  text-align: center;
+  align-content: center;
+}
+
+.tabela__coluna-a {
+  font-weight: 600;
+}
+
+tbody > tr:nth-of-type(odd) {
+  background-color: var(--cor-fundo2);
+}
+
+tbody > tr:nth-of-type(even) {
+  background-color: var(--cor-fundo1);
+}

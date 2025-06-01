@@ -1,3 +1,8 @@
+@import url("styles/tabela.css");
+@import url("styles/reset.css");
+@import url("styles/cabecalho-rodape.css");
+@import url("styles/linhagem.css");
+
 :root{
     --fonte-principal: "Poppins";
     --fonte-tamanho: 16px;
@@ -13,23 +18,6 @@
   font-size: 18px;
   font-weight: 400;
   margin: 0 1em 1em 1em;
-}
-
-.cabecalho {
-  display: flex;
-  margin: 1em;
-}
-
-.cabecalho__link{
-  font-family: var(--fonte-principal);
-  color: var(--cor-preto);
-  font-size: 18px;
-  text-decoration: none;
-  text-align: center;
-}
-
-.cabecalho__link:hover{
-    color: var(--cor-fundo1);
 }
 
 .botoes__linhagem {
@@ -49,50 +37,6 @@
 }
 
 .botoes__linhagem button:hover {
-  background-color: var(--cor-fundo1);
-}
-
-.tabela__nome {
-  padding: 1em;
-}
-
-.tabela__nome strong {
-    font-weight: 700;
-}
-
-.tabela {
-  border-collapse: collapse;
-  font-size: 18px;
-  letter-spacing: 1px;
-  border-collapse: collapse;
-  border-radius: 39px;
-}
-
-.hidden {
-  display: none;
-}
-
-.tabela__cabecalho {
-  background-color: var(--cor-fundo1);
-  font-weight: bold;
-}
-
-.tabela__coluna-a, .tabela__coluna-b {
-  border-radius: 39px;
-  padding: 0.5em;
-  text-align: center;
-  align-content: center;
-}
-
-.tabela__coluna-a {
-  font-weight: 600;
-}
-
-tbody > tr:nth-of-type(odd) {
-  background-color: var(--cor-fundo2);
-}
-
-tbody > tr:nth-of-type(even) {
   background-color: var(--cor-fundo1);
 }
 
@@ -129,25 +73,4 @@ tbody > tr:nth-of-type(even) {
 
 .batidas {
   margin: auto;
-}
-
-.rodape{
-    background-color: var(--cor-fundo1);
-    font-family: var(--fonte-principal);
-    font-size: var(--fonte-tamanho);
-    text-decoration: none;
-    text-align: center;
-    font-weight: 400;
-    font-size: 18px;
-    padding: 1em;
-}
-
-.rodape__texto {
-    color: var(--cor-preto);
-    text-decoration: none;
-    font-family: var(--fonte-principal);
-}
-
-.rodape__texto:hover {
-    font-weight: 800;
 }
