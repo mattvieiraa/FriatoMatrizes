@@ -2,6 +2,7 @@
 @import url("styles/reset.css");
 @import url("styles/cabecalho-rodape.css");
 @import url("styles/linhagem.css");
+@import url("styles/calculadora.css");
 
 :root{
     --fonte-principal: "Poppins";
@@ -45,32 +46,4 @@
   font-weight: 700;
   text-align: center;
   padding: 1em;
-}
-
-.bloco__texto {
-  display: block;
-  align-items: center;
-  text-align: justify;
-}
-
-.calculadora__sub-titulo {
-  font-size: 20px;
-  padding: 1em;
-  font-weight: 600;
-  text-align: center;
-}
-
-.bloco__tabela {
-  display: flex;
-  flex-direction: column;
-}
-
-.calculadora__peso-batida {
-  font-size: 20px;
-  padding: 1em;
-  font-weight: 600;
-}
-
-.batidas {
-  margin: auto;
 }

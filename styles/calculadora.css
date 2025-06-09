@@ -1,0 +1,27 @@
+.bloco__texto {
+  display: block;
+  align-items: center;
+  text-align: justify;
+  margin: 1em auto;
+}
+
+.calculadora__sub-titulo {
+  font-size: 20px;
+  padding: 0.5em;
+  font-weight: 600;
+  text-align: center;
+  background-color: var(--cor-fundo1);
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.calculadora__sub-titulo-tabela {
+  font-size: 20px;
+  padding: 1em;
+  font-weight: 600;
+  text-align: center;
+}
+
+.calculadora__texto {
+  background-color: var(--cor-fundo2);
+  border-bottom-

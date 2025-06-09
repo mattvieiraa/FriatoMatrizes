@@ -25,14 +25,14 @@
     <h2 class="calculadora__sub-titulo">Por que o caminhão não usa o mesmo peso para todas as rações?</h2>
     <p class="calculadora__texto">Cada ração tem um volume diferente devido à sua composição. Você já tentou colocar 2 kg de algodão em um saco de 2 kg de arroz? Não será possível, pois para o algodão atingir 2 kg, é preciso uma quantidade muito maior que a do arroz. A mesma coisa acontece com a ração.</p>
     </div>
-
-    <div class="bloco__tabela">
+    <section class="tabelas__juntas">
+    <div class="bloco__tabela peso-batida">
     <h2 class="calculadora__peso-batida">Peso de cada batida</h2>
     <table class="tabela batidas" id="cobb">
             <thead class="tabela__cabecalho">
                 <tr>
                     <th scope="col" class="tabela__coluna-a">Tipo de Ração</th>
-                    <th scope="col" class="tabela__coluna-b">Peso (Por batida)</th>
+                    <th scope="col" class="tabela__coluna-b">Peso <br>(Por batida)</br> </th>
                 </tr>
             </thead>
             <tbody class="tabela__dados">
@@ -57,12 +57,13 @@
                 </tr>
             </tbody>
         </table> 
+    </div><div class="bloco__tabela peso-caminhao">
     <h2 class="calculadora__peso-batida">Capacidade do caminhão</h2>
     <table class="tabela batidas" id="cobb">
             <thead class="tabela__cabecalho">
                 <tr>
                     <th scope="col" class="tabela__coluna-a">Tipo de Ração</th>
-                    <th scope="col" class="tabela__coluna-b">Peso Máximo (Por comporta)</th>
+                    <th scope="col" class="tabela__coluna-b">Peso Máximo <br>(Por comporta)</br></th>
                 </tr>
             </thead>
             <tbody class="tabela__dados">
@@ -88,6 +89,7 @@
             </tbody>
         </table>
         </div>
+        </section>
         <div class="bloco__texto">
     <h2 class="calculadora__sub-titulo">Como fazer o pedido corretamente?</h2>
     <p class="calculadora__texto">Agora que vocês já sabem o peso que cabe em cada comporta, basta pegar o valor da soma de cada comporta, multiplicar pela quantidade desejada. Após isso, dividir essa quantidade pelo peso da batida. Assim, terão exatamente quanto de ração podem pedir!</p>
