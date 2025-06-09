@@ -1,0 +1,49 @@
+.botoes__linhagem {
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  align-items: center;
+  padding: 1em;
+  margin: 0;
+}
+
+.botoes__linhagem button {
+  font-family: var(--fonte-principal);
+  font-size: 18px;
+  border-radius: 39px;
+  margin: 0.2em;
+}
+
+.botoes__linhagem button:hover {
+  background-color: var(--cor-fundo1);
+}
+
+.tabela__nome{
+  margin: 0 3.8em;
+}
+
+@media screen and (min-width: 1024px) { 
+
+    .linhagem__titulo {
+        font-size: 25px;
+    }
+
+    .botoes__linhagem button {
+        font-size: 25px;
+        border-radius: 29px;
+        margin: 0.2em;
+    }
+
+    .tabela__coluna-a, .tabela__coluna-b {
+        font-size: 25px;
+    }
+
+    .tabela__nome{
+        font-size: 25px;
+        margin: 0 17em;
+    }
+
+    .tabela__dados{
+        margin: 0 18em;
+    }
+}

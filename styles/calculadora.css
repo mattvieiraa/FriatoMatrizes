@@ -24,4 +24,41 @@
 
 .calculadora__texto {
   background-color: var(--cor-fundo2);
-  border-bottom-
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  padding: 1em;
+}
+
+.calculadora__peso-batida {
+  font-size: 20px;
+  padding: 1em;
+  font-weight: 600;
+}
+
+.bloco__item {
+  padding: 1em;
+}
+
+.batidas {
+  margin: auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .bloco__texto {
+    display: flex;
+    gap: 0.1em;
+  }
+
+  .bloco__item {
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+  }
+
+  .tabelas__juntas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 1em;
+  }
+}

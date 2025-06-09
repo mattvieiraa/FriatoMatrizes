@@ -21,29 +21,19 @@
   margin: 0 1em 1em 1em;
 }
 
-.botoes__linhagem {
-  display: flex;
-  justify-content: center;
-  font-size: 24px;
-  align-items: center;
-  padding: 1em;
-  margin: 0;
-}
-
-.botoes__linhagem button {
-  font-family: var(--fonte-principal);
-  font-size: 24px;
-  border-radius: 39px;
-  margin: 0.2em;
-}
-
-.botoes__linhagem button:hover {
-  background-color: var(--cor-fundo1);
-}
-
 .pagina__titulo {
   font-size: 28px;
   font-weight: 700;
   text-align: center;
   padding: 1em;
+}
+
+@media screen and (min-width: 1024px) {
+  .conteudo-principal {
+    margin: 0 5em 1em 5em;
+  }
+
+  .pagina__titulo {
+    font-size: 36px;
+  }
 }
