@@ -84,6 +84,24 @@
         </table>
         </div>
     </div>
+    <div class="calculadora__selecao">
+    <div>
+        <label for="tipoRacao">Qual tipo de ração você precisa?</label>
+            <select class="formulario" id="tipoRacao">
+                <option value="preInicial">PRÉ INICIAL</option>
+                <option value="inicial">INICIAL</option>
+                <option value="crescimento">CRESCIMENTO</option>
+                <option value="prePostura">PRÉ POSTURA</option>
+                <option value="macho">MACHO</option>
+                <option value="postura">POSTURA</option>
+            </select>
+        </div>
+        <div>
+            <label for="comportas">Quantas comportas você precisa?</label> 
+            <input class="formulario" type="number" min="1" max="5" id="comportas"> 
+        </div>
+        <p class="calculadora__texto calculo__racao" id="resultadoCalculo"></p>
+    </div>
     <div class="bloco__texto"> 
     <div class="bloco__item"> <h2 class="calculadora__sub-titulo">Por que usar a calculadora de ração?</h2>
     <p class="calculadora__texto">A calculadora de ração Matrizes serve para auxiliar vocês a realizar os pedidos de acordo com a capacidade de cada tipo de ração dentro do caminhão.</p> </div> 
@@ -93,6 +111,8 @@
     <div class="bloco__item"> <h2 class="calculadora__sub-titulo">Como fazer o pedido corretamente?</h2>
     <p class="calculadora__texto">Agora que vocês já sabem o peso que cabe em cada comporta, basta pegar o valor da soma de cada comporta, multiplicar pela quantidade desejada. Após isso, dividir essa quantidade pelo peso da batida. Assim, terão exatamente quanto de ração podem pedir!</p> </div>
         </section>
+
+    <script src="./js/calculadora.js" defer></script>
     </main>
 
     <footer class="rodape">
