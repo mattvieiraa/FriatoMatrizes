@@ -19,6 +19,30 @@
     <main class="conteudo-principal">
     <h1 class="pagina__titulo">Calculadora de ração - Matrizes</h1>
     <section class="informacao">
+        <div class="calculadora__selecao">
+    <div>
+        <label for="tipoRacao">Qual tipo de ração você precisa?</label>
+            <select class="formulario" id="racao">
+                <option value="preInicial">PRÉ INICIAL</option>
+                <option value="inicial">INICIAL</option>
+                <option value="crescimento">CRESCIMENTO</option>
+                <option value="prePostura">PRÉ POSTURA</option>
+                <option value="macho">MACHO</option>
+                <option value="postura">POSTURA</option>
+            </select>
+        </div>
+    <div>
+        // <label for="comporta">Quantas comportas você precisa?</label>
+            <select class="formulario-comporta" id="comporta">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <p class="calculadora__texto" id="resultadoCalculo"></p>
+    </div>
         <div class="tabelas__juntas">
     <div class="bloco__tabela peso-batida">
         <h2 class="calculadora__sub-titulo-tabela">Peso de cada batida</h2>
@@ -84,32 +108,14 @@
         </table>
         </div>
     </div>
-    <div class="calculadora__selecao">
-    <div>
-        <label for="tipoRacao">Qual tipo de ração você precisa?</label>
-            <select class="formulario" id="tipoRacao">
-                <option value="preInicial">PRÉ INICIAL</option>
-                <option value="inicial">INICIAL</option>
-                <option value="crescimento">CRESCIMENTO</option>
-                <option value="prePostura">PRÉ POSTURA</option>
-                <option value="macho">MACHO</option>
-                <option value="postura">POSTURA</option>
-            </select>
-        </div>
-        <div>
-            <label for="comportas">Quantas comportas você precisa?</label> 
-            <input class="formulario" type="number" min="1" max="5" id="comportas"> 
-        </div>
-        <p class="calculadora__texto calculo__racao" id="resultadoCalculo"></p>
-    </div>
     <div class="bloco__texto"> 
-    <div class="bloco__item"> <h2 class="calculadora__sub-titulo">Por que usar a calculadora de ração?</h2>
-    <p class="calculadora__texto">A calculadora de ração Matrizes serve para auxiliar vocês a realizar os pedidos de acordo com a capacidade de cada tipo de ração dentro do caminhão.</p> </div> 
-    <div class="bloco__item"> <h2 class="calculadora__sub-titulo">Por que o caminhão não usa o mesmo peso para todas as rações?</h2>
-    <p class="calculadora__texto">Cada ração tem um volume diferente devido à sua composição. Você já tentou colocar 2 kg de algodão em um saco de 2 kg de arroz? Não será possível, pois para o algodão atingir 2 kg, é preciso uma quantidade muito maior que a do arroz. A mesma coisa acontece com a ração.</p>
+    <div class="bloco__item"> <h2 class="calculadora__sub-titulo bloco-titulo">Por que usar a calculadora de ração?</h2>
+    <p class="calculadora__texto-bloco">A calculadora de ração Matrizes serve para auxiliar vocês a realizar os pedidos de acordo com a capacidade de cada tipo de ração dentro do caminhão.</p> </div> 
+    <div class="bloco__item"> <h2 class="calculadora__sub-titulo bloco-titulo">Por que o caminhão não usa o mesmo peso para todas as rações?</h2>
+    <p class="calculadora__texto-bloco">Cada ração tem um volume diferente devido à sua composição. Você já tentou colocar 2 kg de algodão em um saco de 2 kg de arroz? Não será possível, pois para o algodão atingir 2 kg, é preciso uma quantidade muito maior que a do arroz. A mesma coisa acontece com a ração.</p>
     </div> 
-    <div class="bloco__item"> <h2 class="calculadora__sub-titulo">Como fazer o pedido corretamente?</h2>
-    <p class="calculadora__texto">Agora que vocês já sabem o peso que cabe em cada comporta, basta pegar o valor da soma de cada comporta, multiplicar pela quantidade desejada. Após isso, dividir essa quantidade pelo peso da batida. Assim, terão exatamente quanto de ração podem pedir!</p> </div>
+    <div class="bloco__item"> <h2 class="calculadora__sub-titulo bloco-titulo">Como fazer o pedido corretamente?</h2>
+    <p class="calculadora__texto-bloco">Agora que vocês já sabem o peso que cabe em cada comporta, basta pegar o valor da soma de cada comporta, multiplicar pela quantidade desejada. Após isso, dividir essa quantidade pelo peso da batida. Assim, terão exatamente quanto de ração podem pedir!</p> </div>
         </section>
 
     <script src="./js/calculadora.js" defer></script>

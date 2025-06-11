@@ -22,7 +22,7 @@
   text-align: center;
 }
 
-.calculadora__texto {
+.calculadora__texto-bloco{
   background-color: var(--cor-fundo2);
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
@@ -58,7 +58,20 @@
   font-weight: bold;
 }
 
+.formulario-comporta{
+  border-radius: 30px;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+  width: 3.5em;
+}
+
+.calculo__racao{
+  background-color: nome;
+}
+
 @media screen and (min-width: 1024px) {
+
   .bloco__texto {
     display: flex;
     gap: 0.1em;
@@ -79,5 +92,9 @@
 
   .calculadora__sub-titulo-tabela{
     font-size: 25px;
+  }
+
+  .calculadora__selecao{
+    margin: 0 20em;
   }
 }
