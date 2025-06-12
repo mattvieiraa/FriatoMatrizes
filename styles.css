@@ -29,7 +29,9 @@
 }
 
 @media screen and (min-width: 1024px) {
-
+  .conteudo-principal {
+    margin: 0 5em 1em 5em;
+  }
 
   .pagina__titulo {
     font-size: 36px;
