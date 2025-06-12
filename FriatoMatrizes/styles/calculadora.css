@@ -1,0 +1,100 @@
+.bloco__texto {
+  display: block;
+  align-items: center;
+  text-align: justify;
+  margin: 1em auto;
+}
+
+.calculadora__sub-titulo {
+  font-size: 20px;
+  padding: 0.5em;
+  font-weight: 600;
+  text-align: center;
+  background-color: var(--cor-fundo1);
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.calculadora__sub-titulo-tabela {
+  font-size: 20px;
+  padding: 1em;
+  font-weight: 600;
+  text-align: center;
+}
+
+.calculadora__texto-bloco{
+  background-color: var(--cor-fundo2);
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  padding: 1em;
+}
+
+.calculadora__peso-batida {
+  font-size: 20px;
+  padding: 1em;
+  font-weight: 600;
+}
+
+.bloco__item {
+  padding: 1em;
+}
+
+.batidas {
+  margin: auto;
+}
+
+.calculadora__selecao{
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  gap: 5px;
+}
+
+.formulario{
+  border-radius: 30px;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.formulario-comporta{
+  border-radius: 30px;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+  width: 3.5em;
+}
+
+.calculo__racao{
+  background-color: nome;
+}
+
+@media screen and (min-width: 1024px) {
+
+  .bloco__texto {
+    display: flex;
+    gap: 0.1em;
+  }
+
+  .bloco__item {
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+  }
+
+  .tabelas__juntas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 1em;
+  }
+
+  .calculadora__sub-titulo-tabela{
+    font-size: 25px;
+  }
+
+  .calculadora__selecao{
+    margin: 0 20em;
+  }
+}

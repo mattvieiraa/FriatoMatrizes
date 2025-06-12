@@ -1,0 +1,39 @@
+.cabecalho {
+  display: flex;
+  margin: 1em;
+  flex-wrap: wrap;
+}
+
+.cabecalho__link{
+  font-family: var(--fonte-principal);
+  color: var(--cor-preto);
+  font-size: 18px;
+  text-decoration: none;
+  text-align: center;
+  padding: 0.5em;
+}
+
+.cabecalho__link:hover{
+    color: var(--cor-fundo1);
+}
+
+.rodape{
+    background-color: var(--cor-fundo1);
+    font-family: var(--fonte-principal);
+    font-size: var(--fonte-tamanho);
+    text-decoration: none;
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 1em;
+}
+
+.rodape__texto {
+    color: var(--cor-preto);
+    text-decoration: none;
+    font-family: var(--fonte-principal);
+}
+
+.rodape__texto:hover {
+    font-weight: 800;
+}

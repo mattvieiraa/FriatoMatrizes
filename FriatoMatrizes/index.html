@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrições - Fábrica Matrizes</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="cabecalho">
+        <a href="./index.html" class="cabecalho__link">TABELA DE ARROÇOAMENTO</a></div>
+        <a href="./calcu.html" class="cabecalho__link">CALCULADORA RAÇÃO</a></div>
+    </header>
+
+    <main class="conteudo-principal">
+
+        
+        <h1 class="pagina__titulo">Tabela de Arroçoamento - Matrizes</h1>
+        <div class="botoes__linhagem">
+            <h1 class="linhagem__titulo">Tipo de linhagem: </h1>
+            <button id="btnCobb">Cobb</button>
+            <button id="btnRoss">Ross</button>
+            <button id="btnHBB">HBB</button>
+        </div>
+        <div class="tabelas__juntas">
+            <h2 class="tabela__nome hidden" id="nomeCobb">Linhagem: <strong>COBB</strong></h2>
+            <table class="tabela hidden" id="cobb"> <thead class="tabela__cabecalho">
+                <tr>
+                    <th scope="col" class="tabela__coluna-a">Tipo de Ração</th>
+                    <th scope="col" class="tabela__coluna-b">Idade (Em semanas)</th>
+                </tr>
+            </thead>
+            <tbody class="tabela__dados">
+                <tr>
+                    <th scope="row" class="tabela__coluna-a">MATRIZ PRE INICIAL – COBB</th>
+                    <td class="tabela__coluna-b">1ª Semana</td>
+                </tr> <tr>
+                    <th scope="row" class="tabela__coluna-a">MATRIZ INICIAL – COBB</th>
+                    <td class="tabela__coluna-b">2ª a 4ª Semanas</td>
+                </tr> <tr>
+                    <th scope="row" class="tabela__coluna-a">MATRIZ CRESCIMENTO - COBB, ROSS, HBB</th>
+                    <td class="tabela__coluna-b">5ª a 18ª Semanas</td>
+                </tr> <tr>
+                    <th scope="row" class="tabela__coluna-a">MATRIZ PRE POSTURA - COBB, ROSS, HBB</th>
+                    <td class="tabela__coluna-b">19ª semanas</td>
+                </tr> <tr>
+                    <th scope="row" class="tabela__coluna-a">MATRIZ POSTURA 1 - COBB</th>
+                    <td class="tabela__coluna-b">(1º ovo) ± 24ª a 38ª Semanas</td>
+                </tr> <tr>
+                    <th scope="row" class="tabela__coluna-a">MATRIZ POSTURA 2 - COBB</th>
+                    <td class="tabela__coluna-b">39ª a 49ª Semanas</td>
+                </tr> <tr>
+                    <th scope="row" class="tabela__coluna-a">MATRIZ POSTURA 3 - COBB</th>
+                    <td class="tabela__coluna-b">50ª Semanas até descarte</td>
+                </tr> <tr>
+                    <th scope="row" class="tabela__coluna-a">RAÇÃO DE MACHO - COBB</th>
+                    <td class="tabela__coluna-b">28ª Semanas até descarte</td>
+                </tr>
+            </tbody>
+
+        </table>
+        <h2 class="tabela__nome hidden" id="nomeRoss">Linhagem: <strong>ROSS</strong></h2>
+            <table class="tabela hidden" id="ross"> <thead class="tabela__cabecalho">
+                <tr>
+                    <th scope="col" class="tabela__coluna-a">Tipo de Ração</th>
+                    <th scope="col" class="tabela__coluna-b">Idade (Em semanas)</th>
+                </tr>
+            </thead>
+            <tbody class="tabela__dados">
+                <tr>
+                    <th scope="row" class="tabela__coluna-a">MATRIZ PRE INICIAL - COBB, ROSS, HBB</th>
+                    <td class="tabela__coluna-b">1ª Semana</td>
+                </tr> <tr>
+                    <th scope="row" class="tabela__coluna-a">MATRIZ INICIAL – ROSS, HBB</th>
+                    <td class="tabela__coluna-b">2ª a 6ª Semanas</td>
+                </tr> <tr>
+                    <th scope="row" class="tabela__coluna-a">MATRIZ CRESCIMENTO - COBB, ROSS, HBB</th>
+                    <td class="tabela__coluna-b">7ª a 16ª Semanas</td>
+                </tr> <tr>
+                    <th scope="row" class="tabela__coluna-a">MATRIZ PRE POSTURA - COBB, ROSS, HBB</th>
+                    <td class="tabela__coluna-b">17ª a ± 23ª Semanas</td>
+                </tr> <tr>
+                    <th scope="row" class="tabela__coluna-a">MATRIZ POSTURA 1 - ROSS HBB</th>
+                    <td class="tabela__coluna-b">(1º ovo) ± 24ª a 34ª Semanas</td>
+                </tr> <tr>
+                    <th scope="row" class="tabela__coluna-a">MATRIZ POSTURA 2 - ROSS HBB</th>
+                    <td class="tabela__coluna-b">35ª a 49ª Semanas</td>
+                </tr> <tr>
+                    <th scope="row" class="tabela__coluna-a">MATRIZ POSTURA 3 - ROSS HBB</th>
+                    <td class="tabela__coluna-b">50ª Semanas até descarte</td>
+                </tr> <tr>
+                    <th scope="row" class="tabela__coluna-a">RAÇÃO DE MACHO - ROSS</th>
+                    <td class="tabela__coluna-b">26ª Semanas até descarte</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 class="tabela__nome hidden" id="nomeHBB">Linhagem: <strong>Hubbard</strong></h2>
+            <table class="tabela hidden" id="hbb"> <thead class="tabela__cabecalho">
+                <tr>
+                    <th scope="col" class="tabela__coluna-a">Tipo de Ração</th>
+                    <th scope="col" class="tabela__coluna-b">Idade (Em semanas)</th>
+                </tr>
+            </thead>
+            <tbody class="tabela__dados">
+                <tr>
+                    <th scope="row" class="tabela__coluna-a">MATRIZ PRE INICIAL - COBB, ROSS, HBB</th>
+                    <td class="tabela__coluna-b">1ª Semana</td>
+                </tr> <tr>
+                    <th scope="row" class="tabela__coluna-a">MATRIZ INICIAL – ROSS, HBB</th>
+                    <td class="tabela__coluna-b">2ª a 6ª Semanas</td>
+                </tr> <tr>
+                    <th scope="row" class="tabela__coluna-a">MATRIZ CRESCIMENTO - COBB, ROSS, HBB</th>
+                    <td class="tabela__coluna-b">7ª a 16ª Semanas</td>
+                </tr> <tr>
+                    <th scope="row" class="tabela__coluna-a">MATRIZ PRE POSTURA - COBB, ROSS, HBB</th>
+                    <td class="tabela__coluna-b">17ª a ± 23ª Semanas</td>
+                </tr> <tr>
+                    <th scope="row" class="tabela__coluna-a">MATRIZ POSTURA 1 - ROSS HBB</th>
+                    <td class="tabela__coluna-b">(1º ovo) ± 24ª a 44ª Semanas</td>
+                </tr> <tr>
+                    <th scope="row" class="tabela__coluna-a">MATRIZ POSTURA 2 - ROSS HBB</th>
+                    <td class="tabela__coluna-b">45ª Semanas até descarte</td>
+                </tr><tr>
+                    <th scope="row" class="tabela__coluna-a">RAÇÃO DE MACHO - COBB</th>
+                    <td class="tabela__coluna-b">28ª Semanas até descarte</td>
+                </tr>
+            </tbody>
+        </table> </div>
+        <script src="js/app.js" defer></script>
+    </main>
+
+    <footer class="rodape">
+        <p>Desenvolvido por <a class="rodape__texto" href="https://github.com/mattvieiraa">Matt Vieira.</a></p>
+    </footer>
+</body>
+</html>
