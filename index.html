@@ -17,9 +17,19 @@
     </header>
 
     <main class="conteudo-principal">
-
-        
         <h1 class="pagina__titulo">Tabela de Arroçoamento - Matrizes</h1>
+        <div class="calculadora__idade">
+            <label for="linhagemGranja">Qual a linhagem da granja?</label>
+                <select class="formulario__linhagem " id="linhagemGranja">
+                    <option value="linhagemCobb">COBB</option>
+                    <option value="linhagemRoss">ROSS</option>
+                    <option value="linhagemHBB">HBB</option>
+                </select>
+            <label for="idade">Digite a idade:</label>
+                <input class="formulario__idade" type="number" id="idade" name="idade" min="1" step="1">
+                <button onclick="mostrarLinagem()" id="btn-calcular" class="formulario">Mostar linha indicada</button>
+            <p id="resultadoIdade"></p>
+        </div>
         <div class="botoes__linhagem">
             <h1 class="linhagem__titulo">Tipo de linhagem: </h1>
             <button id="btnCobb">Cobb</button>

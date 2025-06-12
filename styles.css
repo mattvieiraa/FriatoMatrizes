@@ -12,6 +12,10 @@
     --cor-fundo2: #EDEDED; 
 }
 
+strong {
+  font-weight: 700;
+}
+
 .conteudo-principal {
   min-height: 100vh;
   font-family: var(--fonte-principal);
@@ -29,7 +33,9 @@
 }
 
 @media screen and (min-width: 1024px) {
-
+  .conteudo-principal {
+    margin: 0 5em 1em 5em;
+  }
 
   .pagina__titulo {
     font-size: 36px;

@@ -41,3 +41,34 @@ tbody > tr:nth-of-type(odd) {
 tbody > tr:nth-of-type(even) {
   background-color: var(--cor-fundo1);
 }
+
+.formulario__linhagem {
+  background-color: var(--cor-fundo2);
+  border-radius: 30px;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+  width: 10ch;
+}
+
+.formulario__idade{
+  border-radius: 30px;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+  width: 5ch;
+}
+
+.calculadora__idade {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+@media screen and (min-width: 1024px) {
+  .calculadora__idade {
+    margin: 0 0 0 15%;
+    flex-direction: row;
+    align-items: center;
+  }
+}
