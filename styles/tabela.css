@@ -67,8 +67,12 @@ tbody > tr:nth-of-type(even) {
 
 @media screen and (min-width: 1024px) {
   .calculadora__idade {
+    display: block;
     margin: 0 0 0 15%;
-    flex-direction: row;
-    align-items: center;
   }
+
+  .calculadora__idade > * { 
+  margin-bottom: 0.5em;
+}
+
 }

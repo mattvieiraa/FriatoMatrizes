@@ -62,6 +62,7 @@ function mostrarLinagem() {
         } else {
             racaoRecomendada.innerHTML = `<p id="resultadoIdade">Ração fêmeas recomendada:<br> <strong>MATRIZ POSTURA 2 – ROSS HBB</strong> <br>Ração machos recomendada:<br> <strong>RAÇÃO DE MACHO – COBB</strong></p>`;
         }
+    }    
 }
 
 // Seleciona os botões
