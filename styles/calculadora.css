@@ -15,6 +15,10 @@
   border-top-right-radius: 30px;
 }
 
+.formulario__racao{
+  width: 20ch;
+}
+
 .calculadora__sub-titulo-tabela {
   font-size: 20px;
   padding: 1em;

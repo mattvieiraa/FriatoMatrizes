@@ -19,31 +19,27 @@
     <main class="conteudo-principal">
     <h1 class="pagina__titulo">Calculadora de ração - Matrizes</h1>
     <section class="informacao">
-        <!-- <div class="calculadora__selecao">
-    <div>
-        <label for="tipoRacao">Qual tipo de ração você precisa?</label>
-            <select class="formulario" id="racao">
-                <option value="preInicial">PRÉ INICIAL</option>
-                <option value="inicial">INICIAL</option>
-                <option value="crescimento">CRESCIMENTO</option>
-                <option value="prePostura">PRÉ POSTURA</option>
-                <option value="macho">MACHO</option>
-                <option value="postura">POSTURA</option>
+    <!-- <div class="calculadora__idade">
+        <label for="tipoRacao">Qual o tipo de ração?</label>
+            <select class="formulario__racao formulario__linhagem" id="linhagemGranja">
+                <option value="rInicial">PRÉ INICIAL/INICIAL</option>
+                <option value="rCrescimento">CRESCIMENTO</option>
+                <option value="rPpostura">PRÉ POSTURA</option>
+                <option value="rPostura">POSTURAS</option>
+                <option value="rMacho">MACHO</option>
             </select>
-        </div>
-        <div>
-        <label for="comporta">Quantas comportas você precisa?</label>
-            <select class="formulario-comporta" id="comporta">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="4">4</option>
-                <option value="3">3</option>
-                <option value="5">5</option>
+            <label for="comporta">Quantas comportas?</label>
+                <select class="formulario__linhagem formulario__idade" id="linhagemGranja">
+                <option value="c1">1</option>
+                <option value="c2">2</option>
+                <option value="c3">3</option>
+                <option value="c4">4</option>
+                <option value="c5">5</option>
             </select>
-        </div>
-        <p class="calculadora__texto" id="resultadoCalculo"></p>
-    </div> -->
-        <div class="tabelas__juntas">
+                <button onclick="mostrarComporta()" id="btn-calcular" class="formulario">Mostar quanto pedir</button>
+            <p id="resultadoComporta"></p>
+        </div>     -->
+    <div class="tabelas__juntas">
     <div class="bloco__tabela peso-batida">
         <h2 class="calculadora__sub-titulo-tabela">Peso de cada batida</h2>
         <table class="tabela batidas" id="cobb">
