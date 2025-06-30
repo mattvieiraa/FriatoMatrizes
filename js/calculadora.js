@@ -34,7 +34,9 @@ document.addEventListener('DOMContentLoaded', () => {
             'c2': '7.200 KG',
             'c3': '9.900 KG',
             'c4': '13.500 KG',
-            'c5': '17.100 KG' // Assuming '19 BATIDAS' corresponds to 5 Comportas for rPostura
+            // For 'c5' (5 Comportas) for 'rPostura', we'll handle this separately to show both options
+            'c5_option1': '15.300 KG', // From '5 COM. (17 BATIDAS)'
+            'c5_option2': '17.100 KG'  // From '5 COM. (19 BATIDAS)'
         },
         'rMacho': { // MACHO
             'c1': '2.500 KG',
@@ -51,28 +53,29 @@ document.addEventListener('DOMContentLoaded', () => {
         const selectedRacao = tipoRacaoSelect.value;
         const selectedComporta = comportaSelect.value;
 
-        let feedQuantity = 'N/A';
-
-        // Check if the selected feed type and compartment exist in our data
-        if (feedData[selectedRacao] && feedData[selectedRacao][selectedComporta]) {
-            feedQuantity = feedData[selectedRacao][selectedComporta];
-        } else if (selectedRacao === 'rPpostura' && selectedComporta === 'c5') {
-             // Specific handling for "Pré Postura" and 5 Comportas, which has "15.200 KG" in the image's "19 BATIDAS" column
-            feedQuantity = '15.200 KG';
-        } else if ((selectedRacao === 'rInicial' || selectedRacao === 'rCrescimento' || selectedRacao === 'rMacho' || selectedRacao === 'rPostura') && selectedComporta === 'c5') {
-            // General handling for 5 Comportas (19 BATIDAS) for other feed types
-            feedQuantity = feedData[selectedRacao][selectedComporta];
-        }
-
-
+        let feedQuantityMessage = '';
         let racaoLabel = '';
+
         // Get the text label for the selected feed type
         const selectedOption = tipoRacaoSelect.options[tipoRacaoSelect.selectedIndex];
         racaoLabel = selectedOption ? selectedOption.textContent : 'Tipo de Ração Desconhecido';
 
+        if (selectedRacao === 'rPostura' && selectedComporta === 'c5') {
+            // Special case for 'Posturas' and '5 Comportas'
+            const quantity1 = feedData.rPostura.c5_option1;
+            const quantity2 = feedData.rPostura.c5_option2;
+            feedQuantityMessage = `o pedido deve ser de ${quantity1} ou ${quantity2}`;
+        } else if (feedData[selectedRacao] && feedData[selectedRacao][selectedComporta]) {
+            // General case for other selections
+            const quantity = feedData[selectedRacao][selectedComporta];
+            feedQuantityMessage = `o pedido deve ser de ${quantity}`;
+        } else {
+            // Handle cases where data might not be explicitly defined for 'c5' if it wasn't already covered
+            feedQuantityMessage = `N/A`; // Or a more specific message if needed
+        }
 
-        if (feedQuantity !== 'N/A') {
-            resultadoComportaP.textContent = `A ração ${racaoLabel.toLowerCase()} o pedido deve ser de ${feedQuantity} para caber em ${selectedComporta.replace('c', '')} Comportas.`;
+        if (feedQuantityMessage !== 'N/A') {
+            resultadoComportaP.textContent = `A ração ${racaoLabel.toLowerCase()} ${feedQuantityMessage} para caber em ${selectedComporta.replace('c', '')} Comportas.`;
         } else {
             resultadoComportaP.textContent = `Não há dados disponíveis para a ração "${racaoLabel.toLowerCase()}" e "${selectedComporta.replace('c', '')}" comportas.`;
         }
